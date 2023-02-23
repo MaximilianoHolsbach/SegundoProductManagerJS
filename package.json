@@ -1,0 +1,21 @@
+{
+  "type": "module",
+  "name": "segundoproductmanagerjs",
+  "version": "1.0.0",
+  "description": "<br></br>\r ## MANEJO DE ARCHIVOS\r ---",
+  "main": "segundoProductManager.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaximilianoHolsbach/SegundoProductManagerJS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaximilianoHolsbach/SegundoProductManagerJS/issues"
+  },
+  "homepage": "https://github.com/MaximilianoHolsbach/SegundoProductManagerJS#readme"
+}
