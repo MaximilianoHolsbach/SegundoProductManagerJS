@@ -1,4 +1,5 @@
 import fs from 'fs'
+import {randomUUID}  from 'crypto'
 
 
 
@@ -74,20 +75,21 @@ class ProductManager{
     
 
 class Product{
-    constructor(title,description,price,thumbnail,code,stock){
+    constructor(title,description,price,thumbnail,stock){
         this.title = title
         this.description = description
         this.price = price
         this.thumbnail = thumbnail
-        this.code = code
+        this.code = randomUUID()
         this.stock = stock
     }
 }
 
 
-//const administrador = new ProductManager('./manejoDeArchivosEnJs/SegundoProductManagerJS/productsFile.txt')
 
-//await administrador.addProduct(new Product('Toner Ricoh MP301','Insumo para impresoras Ricoh',10,'https://c8.alamy.com/compes/2gxf6rm/icono-de-impresora-laser-moderna-en-estilo-de-contorno-aislado-sobre-fondo-blanco-2gxf6rm.jpg',20,50))
+const administrador = new ProductManager('./manejoDeArchivosEnJs/SegundoProductManagerJS/productsFile.txt')
+
+await administrador.addProduct(new Product('Toner Ricoh MP301','Insumo para impresoras Ricoh',10,'https://c8.alamy.com/compes/2gxf6rm/icono-de-impresora-laser-moderna-en-estilo-de-contorno-aislado-sobre-fondo-blanco-2gxf6rm.jpg',50))
 //await administrador.addProduct(new Product('Toner Ricoh 1170D','Insumo para modelos 1515,161,171,201',8,'https://c8.alamy.com/compes/2gxf6rm/icono-de-impresora-laser-moderna-en-estilo-de-contorno-aislado-sobre-fondo-blanco-2gxf6rm.jpg',19,50))
 //await administrador.addProduct(new Product('Test','Insumo para impresoras Ricoh',10,'https://c8.alamy.com/compes/2gxf6rm/icono-de-impresora-laser-moderna-en-estilo-de-contorno-aislado-sobre-fondo-blanco-2gxf6rm.jpg',18,50))
 
